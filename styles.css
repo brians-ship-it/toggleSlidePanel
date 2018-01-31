@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	height: 40px;
+}
+
+.container {
+	margin: 10px;
+}
+
+.navbar-nav {
+	padding-left: 10px;
+	margin-top: -8px;
+	background-color: #343A40;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #BF4666;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0 10px 0;
+}
+
+.card.body {
+	margin-top: 40px;
+	border-radius: 0;
+}
+
+
+.flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+ -ms-flex-pack: center;
+ -webkit-box-pack: center;
+         justify-content: center;
+}
+
+.section.group {
+	max-width: 1024px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+ -ms-flex-pack: center;
+ -webkit-box-pack: center;
+         justify-content: center;
+}
+
+
+.col.right {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 200px;
+	        flex: 0 0 200px;
+}
+
+.panel { 
+  	width:300px;
+  	background-color: #617891;
+  	color: #fff;
+}
+
+.card.footer {
+	height: 30px;
+	background-color: #343A40;
+	color: #fff;
+	border-radius: 0;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width : 280px) and (max-width : 780px) {
+	.section.group {
+		max-width: 780px;
+	 -ms-flex-pack: center;
+	 -webkit-box-pack: center;
+	         justify-content: center;
+	}
+
+	.flex-container {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	 -ms-flex-pack: center;
+	 -webkit-box-pack: center;
+	         justify-content: center;
+	}
+
+	.panel {
+		width: auto;
+	}
+}
